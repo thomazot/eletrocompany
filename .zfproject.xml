@@ -15,7 +15,12 @@
       </controllersDirectory>
       <formsDirectory enabled="false"/>
       <layoutsDirectory enabled="false"/>
-      <modelsDirectory/>
+      <modelsDirectory>
+        <dbTableDirectory>
+          <dbTableFile dbTableName="Role"/>
+        </dbTableDirectory>
+        <modelFile modelName="Role"/>
+      </modelsDirectory>
       <modulesDirectory>
         <moduleDirectory moduleName="default">
           <apisDirectory enabled="false"/>
