@@ -29,4 +29,9 @@ class ControllerTestCase extends Zend_Test_PHPUnit_ControllerTestCase {
         $this->reset();
         $this->resetResponse();
     }
+    
+    private function _sql() {
+        $this->_sql['create']['roles'] = "CREATE TABLE roles (id integer NOT NULL primary key autoincrement,name varchar(45) NOT NULL,created_at datetime NOT NULL,updated_at datetime NOT NULL);";
+        $this->_sql['drop']['roles'] = "drop table roles";
+    }
 }
