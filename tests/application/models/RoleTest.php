@@ -11,5 +11,3 @@ class RoleTest extends ControllerTestCase {
         $this->assertInstanceOf("Application_Model_Role", new Application_Model_Role());
     }
 }
-
-?>
