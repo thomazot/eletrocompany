@@ -2,11 +2,6 @@
 
 class Application_Model_Role
 {
-
-    public function __construct() {
-        $this->_dbTable = new Application_Model_DbTable_Role();
-        $this->_table = "roles";
-    }
     
     public function save (array $data) {
         $dt = new Zend_Date();

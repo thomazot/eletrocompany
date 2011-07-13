@@ -17,8 +17,6 @@ class RoleTest extends ControllerTestCase {
         $this->_role = new Application_Model_Role();
         
         $this->_db->query($this->_sql['create']['roles']);
-        
-        echo $this->_sql['create']['roles'];
     }
     
     public function tearDown() {
@@ -33,5 +31,9 @@ class RoleTest extends ControllerTestCase {
     public function testDeveInserirNovaRole() {
         $result = $this->_role->save($this->_data[0]);
         $this->assertEquals(1, $result);
+        
+        # Triangulando
+        $result = $this->_role->save($this->_data[1]);
+        $this->assertEquals(2, $result);
     }
 }

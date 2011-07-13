@@ -23,6 +23,7 @@ class ControllerTestCase extends Zend_Test_PHPUnit_ControllerTestCase {
         $this->bootstrap = array($this, "appBootstrap");
         parent::setUp();
         $this->_db = Zend_Db_Table::getDefaultAdapter();
+        $this->_sql();
     }
     
     public function tearDown() {
