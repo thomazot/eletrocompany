@@ -20,6 +20,7 @@
           <dbTableFile dbTableName="Role"/>
         </dbTableDirectory>
         <modelFile modelName="Role"/>
+        <modelFile modelName="Abstract"/>
       </modelsDirectory>
       <modulesDirectory>
         <moduleDirectory moduleName="default">
