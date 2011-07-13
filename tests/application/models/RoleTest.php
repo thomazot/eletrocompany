@@ -27,8 +27,6 @@ class RoleTest extends ControllerTestCase {
     public function testVerificaTipoModel() {
         $this->assertInstanceOf("Application_Model_Role", new Application_Model_Role());
     }
-<<<<<<< HEAD
-=======
     
     public function testDeveInserirNovaRole() {
         $result = $this->_role->save($this->_data[0]);
@@ -38,5 +36,4 @@ class RoleTest extends ControllerTestCase {
         $result = $this->_role->save($this->_data[1]);
         $this->assertEquals(2, $result);
     }
->>>>>>> 8deb9c3e445fe665d0d81b32aea7307e042b8f2f
 }
