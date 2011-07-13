@@ -8,8 +8,8 @@ abstract class Application_Model_Abstract {
         $dt = new Zend_Date();
         $dt = $dt->toString("yyyy-MM-dd h:i:s");
         
-        $data["created"] = $dt;
-        $data["updated"] = $dt;
+        $data["created_at"] = $dt;
+        $data["updated_at"] = $dt;
         
         if(isset($data["id"]))
             return $this->_update($data);
