@@ -18,6 +18,8 @@
       <modelsDirectory>
         <dbTableDirectory>
           <dbTableFile dbTableName="Role"/>
+          <dbTableFile dbTableName="Resource"/>
+          <dbTableFile dbTableName="Privilege"/>
         </dbTableDirectory>
         <modelFile modelName="Role"/>
         <modelFile modelName="Abstract"/>
